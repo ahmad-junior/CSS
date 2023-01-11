@@ -1,0 +1,43 @@
+/* Universal Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+    background: lightblue;
+}
+
+/* At this stage ignore this */
+ul{
+    margin: 20px;
+}
+
+.m-20{
+    margin: 20px;
+}
+
+/* Borders */
+.solid-bd{
+    border: 2px solid red;
+}
+
+.dashed-bd{
+    border: 2px dashed red;
+}
+
+.dotted-bd{
+    border: 2px dotted red;
+}
+
+.bd-solid-lf{
+    border-left: 2px solid red;
+}
+.bd-dotted-rg{
+    border-right: 2px dotted red;
+}
+.bd-dashed-bottom{
+    border-bottom: 2px dashed red;
+}   
