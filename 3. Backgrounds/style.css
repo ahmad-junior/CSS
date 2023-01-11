@@ -1,0 +1,41 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container CSS */
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+/* Backgrounds */
+.bg-color{
+    background: blue;
+}
+
+.bg-image{
+    background-image: url("./src/sample.jpg");
+    width: 100%;
+    height: 100vh;
+}
+
+/* Text */
+.text-white {
+    color: #fff;
+}
+
+/* CSS Utills */
+.no-repeat{
+    background-repeat: no-repeat;
+}
+
+.bg-fixed{
+    background-attachment: fixed;
+}
+
+.bg-cover{
+    background-size: cover;
+}
