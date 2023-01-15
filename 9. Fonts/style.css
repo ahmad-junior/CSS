@@ -1,0 +1,38 @@
+/* Body */
+body{
+    background: #232323;
+    color: #fff;
+}
+
+/* Headings */
+.primary-heading{
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    text-shadow: 0px 2px 10px #0079fc;
+}
+
+.secondary-heading{
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    text-shadow: 0px 2px 10px #0079fc;
+}
+
+/* Paragraphs */
+p{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-indent: 2rem;
+    text-align: justify;
+    width: 90%;
+    margin: 0 auto 1rem auto;
+    padding: 1.4rem;
+    background: #111111;
+    border-radius: 5px;
+}
