@@ -1,0 +1,85 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Headings */
+.primary-heading, .secondary-heading{
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.primary-heading{
+    font-size: 2.5rem;
+}
+
+.secondary-heading{
+    font-size: 2rem;
+}
+
+/* Box */
+.box{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.flexIt{
+    display: flex;
+    gap: 1rem;
+}
+
+.flexIt li{
+    list-style: none;
+}
+
+.flexIt li a{
+    display: block;
+    height: 44px;
+    border-radius: 4px;
+}
+
+/* Set Image Sprites accordingly */
+#home{
+    width: 46px;
+    background: url("./src/img_sprites.gif") no-repeat 0 0;
+}
+
+#home:hover{
+    width: 46px;
+    background: url("./src/img_sprites.gif") no-repeat 0 -45px;
+}
+
+#pre{
+    width: 43px;
+    background: url("./src/img_sprites.gif") no-repeat -47px 0;
+}
+
+#pre:hover{
+    width: 43px;
+    background: url("./src/img_sprites.gif") no-repeat -47px -45px;
+}
+
+#next{
+    width: 43px;
+    background: url("./src/img_sprites.gif") no-repeat -91px 0;
+}
+
+#next:hover{
+    width: 43px;
+    background: url("./src/img_sprites.gif") no-repeat -91px -45px;
+}
+
