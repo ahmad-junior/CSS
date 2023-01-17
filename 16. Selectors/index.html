@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Selectors</title>
+</head>
+<body>
+    <h1 class="primary-heading">Selectors</h1>
+    <h2 class="secondary-heading">Combinators</h2>
+    <div class="default-paragraph">
+        <p>Combinators are used to combine two or more selectors. There are four types of combinators in CSS:</p>
+        <ul>
+            <li>Descendant combinator</li>
+            <p>Syntax</p>
+            <pre>
+                <code>
+                    selector1 selector2 {
+                        property: value;
+                    }
+                </code>
+            </pre>
+            <li>Child combinator</li>
+            <p>Syntax</p>
+            <pre>
+                <code>
+                    selector1 > selector2 {
+                        property: value;
+                    }
+                </code>
+            </pre>
+            <li>Adjacent sibling combinator</li>
+            <p>Syntax</p>
+            <pre>
+                <code>
+                    selector1 + selector2 {
+                        property: value;
+                    }
+                </code>
+            </pre>
+            <li>General sibling combinator</li>
+            <p>Syntax</p>
+            <pre>
+                <code>
+                    selector1 ~ selector2 {
+                        property: value;
+                    }
+                </code>
+            </pre>
+        </ul>
+    </div>
+    <h2 class="secondary-heading">Pseudo Class</h2>
+    <div class="default-paragraph">
+        <p>Pseudo-classes are used to define special states of an element. For example, it can be used to:</p>
+        <ul>
+            <li>Style an element when a user mouses over it</li>
+            <li>Style visited and unvisited links differently</li>
+            <li>Style an element when it gets focus</li>
+        </ul>
+        <p>There are two types of pseudo-classes:</p>
+        <ul>
+            <li>Link pseudo-classes</li>
+            <li>UI element states</li>
+        </ul>
+        <p>Link pseudo-classes are used to define a special state of links. There are four link pseudo-classes:</p>
+        <ul>
+            <li><code>a:link</code> - Selects all unvisited links</li>
+            <li><code>a:visited</code> - Selects all visited links</li>
+            <li><code>a:hover</code> - Selects the link the mouse pointer is over</li>
+            <li><code>a:active</code> - Selects the active link</li>
+        </ul>
+        <p>UI element states are used to define a special state of user interface (UI) elements. There are eight UI element states:</p>
+        <ul>
+            <li><code>:hover</code> - Selects elements when you mouse over them</li>
+            <li><code>:active</code> - Selects the active element</li>
+            <li><code>:focus</code> - Selects the element that has focus</li>
+            <li><code>:target</code> - Selects the current active element (clicked on a URL containing a reference to that element)</li>
+            <li><code>:lang()</code> - Selects elements based on the language of the element</li>
+            <li><code>:enabled</code> - Selects all enabled elements</li>
+            <li><code>:disabled</code> - Selects all disabled elements</li>
+            <li><code>:checked</code> - Selects all checked elements</li>
+        </ul>
+    </div>
+    <h2 class="secondary-heading">Pseudo Eelement</h2>
+    <div class="default-paragraph">
+        <p>Pseudo-elements are used to style specified parts of an element. For example, it can be used to:</p>
+        <ul>
+            <li>Insert content before, after, or in-between the content of an element</li>
+            <li>Style the first letter, or line, of an element</li>
+        </ul>
+        <p>There are two types of pseudo-elements:</p>
+        <ul>
+            <li>Content pseudo-elements</li>
+            <li>Text pseudo-elements</li>
+        </ul>
+        <p>Content pseudo-elements are used to insert content before, after, or in-between the content of an element. There are two content pseudo-elements:</p>
+        <ul>
+            <li><code>::before</code> - Inserts content before the content of an element</li>
+            <li><code>::after</code> - Inserts content after the content of an element</li>
+        </ul>
+        <p>Text pseudo-elements are used to style the first letter, or line, of an element. There are two text pseudo-elements:</p>
+        <ul>
+            <li><code>::first-letter</code> - Selects the first letter of an element</li>
+            <li><code>::first-line</code> - Selects the first line of an element</li>
+        </ul>
+    </div>
+    <h2 class="secondary-heading">Attr Selectors</h2>
+    <div class="default-paragraph">
+        <p>Attribute selectors are used to select elements with a specific attribute or attribute value.</p>
+        <p>There are three types of attribute selectors:</p>
+        <ul>
+            <li><code>[attribute]</code> - Selects all elements with the specified attribute</li>
+            <li><code>[attribute=value]</code> - Selects all elements with the specified attribute value</li>
+            <li><code>[attribute~=value]</code> - Selects all elements with the specified attribute value, separated by spaces</li>
+        </ul>
+    </div>
+    <h2 class="secondary-heading">Specificity</h2>
+    <div class="default-paragraph">
+        <p>Specificity is used to determine which style rule should be applied if more than one rule matches a certain element.</p>
+        <p>There are four types of selectors, each with a different specificity:</p>
+        <ul>
+            <li>Inline style - 1000</li>
+            <li>IDs - 100</li>
+            <li>Classes, pseudo-classes, attributes - 10</li>
+            <li>Elements, pseudo-elements - 1</li>
+        </ul>
+        <p>Specificity is calculated by adding the specificity of each selector in a rule. For example, the following rule has a specificity of 0,0,1,1 (0+0+1+1):</p>
+        <pre>
+            <code>
+                p {
+                    color: red;
+                }
+            </code>
+        </pre>
+        <p>Inline styles have the highest specificity, IDs have a specificity of 100, classes, pseudo-classes, and attributes have a specificity of 10, and elements and pseudo-elements have a specificity of 1.</p>
+        <p>If two or more rules have the same specificity, the last declared rule will be applied.</p>
+        <p>Specificity can be used to override styles. For example, the following rule has a specificity of 0,0,0,2 (0+0+0+2):</p>
+        <pre>
+            <code>
+                * {
+                    color: red;
+                }
+            </code>
+        </pre>
+        <p>Since the rule has a specificity of 0,0,0,2, it will override all other rules.</p>
+    </div>
+</body>
+</html>
