@@ -1,0 +1,89 @@
+body{
+    background-color: #232323;
+    color: #fff;
+}
+
+.default-paragraph{
+    background: #000000;
+    text-align: justify;
+    color: #fff;
+    padding: 1em;
+    margin: 0.5rem auto;
+    border-radius: 0.5rem;
+    width: 90%;
+}
+
+p{
+    text-indent: 2rem;
+}
+
+.primary-heading{
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 0px 2px 20px #fff;
+}
+
+.secondary-heading{
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 0px 2px 20px #fff;
+}
+
+.fancy{
+    font-family: 'Lobster', cursive;
+    font-size: 1.8rem;
+    width: 200px;
+    height: 50px;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #0079fc;
+}
+
+.fancy-none{
+    font-family: 'Lobster', cursive;
+    font-size: 1.8rem;
+    width: 200px;
+    height: 50px;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #ff00ff;
+    margin: 2rem;
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.float-none{
+    float: none;
+}
+
+.float-inherit{
+    float: inherit;
+}
+
+.clear-left{
+    clear: left;
+}
+
+.clear-right{
+    clear: right;
+}
+
+.clear-both{
+    clear: both;
+}
+
+.clear-none{
+    clear: none;
+}
+
+.clear-inherit{
+    clear: inherit;
+}
