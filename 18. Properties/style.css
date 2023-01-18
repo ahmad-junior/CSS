@@ -1,0 +1,36 @@
+body{
+    background-color: #232323;
+    color: #fff;
+    counter-reset: section;
+}
+
+h3::before{
+    counter-increment: section;
+    content: "No: " counter(section) ". ";
+}
+
+.box{
+    background: #000000;
+    text-align: justify;
+    color: #fff;
+    padding: 1em;
+    margin: 0.5rem auto;
+    border-radius: 0.5rem;
+    width: 90%;
+}
+
+p{
+    text-indent: 2rem;
+}
+
+.primary-heading{
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 0px 2px 20px #fff;
+}
+
+.secondary-heading{
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 0px 2px 20px #fff;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Properties</title>
+</head>
+<body>
+    <h1 class="primary-heading">Properties</h1>
+    <h2 class="secondary-heading">CSS Counters</h2>
+    <div class="box">
+        <p>CSS counters are "variables" maintained by CSS whose values can be incremented by CSS rules (to track how many times they are used). Counters let you adjust the appearance of content based on its placement in the document.</p>
+        <pre>To work with css counters we have the following css Properties:</pre>
+        <ul>
+            <li>counter-reset - Creates or resets a counter</li>
+            <li>counter-increment - Increments a counter value</li>
+            <li>content - Inserts generated content</li>
+            <li>counter() or counters() function - Adds the value of a counter to an element</li>
+        </ul>
+        <h2 class="secondary-heading">Example</h2>
+        <h3 class="secondary-heading">HTML</h3>
+        <h3 class="secondary-heading">CSS</h3>
+        <h3 class="secondary-heading">JavaScript</h2>
+
+    </div>
+    <h2 class="secondary-heading">Units</h2>
+    <div class="box">
+        <p>Units are used to specify the size of a CSS property. There are many different units available in CSS, but the most common are:</p>
+        <ul>
+            <li>px - Pixels</li>
+            <li>em - Relative to the font-size of the element (2em means 2 times the size of the current font)</li>
+            <li>rem - Relative to font-size of the root element</li>
+            <li>% - Relative to the parent element</li>
+            <li>vh - Relative to 1% of the viewport's height</li>
+            <li>vw - Relative to 1% of the viewport's width</li>
+            <li>vmin - Relative to 1% of viewport's smaller dimension</li>
+            <li>vmax - Relative to 1% of viewport's larger dimension</li>
+        </ul>
+    </div>
+    <h2 class="secondary-heading">!important</h2>
+    <div class="box">
+        <p>The !important rule is used to override any other declarations. It should be used with caution, because it is often considered bad practice. It is better to be specific when selecting elements than using !important.</p>
+        <p>Example:</p>
+        <pre>        h1 {
+            color: red !important;
+        }</pre>
+    </div>
+    <h2 class="secondary-heading">Math functions</h2>
+    <div class="box">
+        <p>Math functions are used to perform calculations when declaring CSS values. The following math functions are available:</p>
+        <ul>
+            <li>calc()</li>
+            <li>min()</li>
+            <li>max()</li>
+            <li>clamp()</li>
+        </ul>
+        <p>Example:</p>
+        <pre>        h1 {
+            width: calc(100% - 50px);
+        }</pre>
+    </div>
+</body>
+</html>
