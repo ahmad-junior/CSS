@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+}
+
+fieldset{
+    margin: 3px;
+    padding: 10px;
+    border: 2px solid crimson;
+    border-radius: 5px;
+}
+
+legend{
+    font-size: 20px;
+    font-weight: bold;
+    color: crimson;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.primary-heading{
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0079fc;
+    text-shadow:0px 3px 20px #0079fc;
+    margin: 5px 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.required_it{
+    position: absolute;
+    top: 0;
+    color: crimson;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #0079fc;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #0079fc;
+    font-family: 'Courier New', Courier, monospace;
+    background: #f5f5f5;
+    cursor: pointer;
+}
