@@ -1,0 +1,37 @@
+.primary-heading{
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.secondary-heading{
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 1rem auto;
+}
+
+.linear{
+    background: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+}
+
+.radial{
+    background: radial-gradient(circle, #ff0000, #00ff00, #0000ff);
+}
+
+.conic{
+    background: conic-gradient(#ff0000, #00ff00, #0000ff);
+}
