@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    background: #002300;
+}
+
+.grid-item{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+#columns{
+    grid-area: 1 / 1 / 1 / 5;
+}
+
+#rows{
+    grid-area: 2 / 1/ 6 /1;
+}
