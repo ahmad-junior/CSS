@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Variables</title>
+</head>
+<body>
+    <h1 class="primary-heading">CSS Variables</h1>
+    <div class="container">
+        <p>Variables are a way to store information to be reused throughout a document. They are declared by using the var() function, followed by the variable name inside of a pair of parentheses.</p>
+        <p>Variables are case-sensitive, so --main-color and --Main-Color are two different variables.</p>
+        <p>Variables can be declared in the root of the document, or in a specific selector. If a variable is declared in a selector, it will only be available to that selector and its children.</p>
+        <p>Variables can be used in any CSS property value, not just custom properties.</p>
+    </div>
+    <div class="container grid gap wrap">
+        <div class="item round">
+            <h2 class="secondary-heading">var()</h2>
+            <p>Variables are declared by using the var() function, followed by the variable name inside of a pair of parentheses.</p>
+            <pre class="code">Syntax:
+    Declaration:
+        --variable-name: value;
+    Accessing:
+        var(--variable-name);</pre>
+        </div>
+        <div class="item round">
+            <h2 class="secondary-heading">Overiding Variables</h2>
+            <p>Variables can be overriden by using the !important keyword.</p>
+            <pre class="code">Syntax:<br>   var(--variable-name, !important)</pre>
+            <p>We can overwrite the global and local variables</p>
+        </div>
+        <div class="item round">
+            <h2 class="secondary-heading">Variables and JavaScript</h2>
+            <p>Variables can be used in JavaScript to change the value of a variable.</p>
+            <pre class="code">Syntax:
+    const root = document.documentElement;
+    root.style.setProperty('--variable-name', 'value');</pre>
+        </div>
+        <div class="item round">
+            <h2 class="secondary-heading">Queries</h2>
+            <p>Queries are a way to change the value of a variable based on a certain condition.</p>
+            <pre class="code">Syntax:<br>    var(--variable-name, condition)</pre>
+        </div>
+    </div>
+</body>
+</html>
